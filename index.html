@@ -74,6 +74,7 @@
 
       // Array.prototype.filter()
       // 1. Filter the list of inventors for those who were born in the 1500's
+      // SOLUTION
       // const inventorsIn1500s = [];
       // for (const inventor of inventors) {
       //   if (inventor.year >= 1500 && inventor.year <= 1599) {
@@ -89,6 +90,18 @@
 
       // Array.prototype.map()
       // 2. Give us an array of the inventors first and last names
+      // SOLUTION
+      // const inventorsFullName = [];
+      // for (const inventor of inventors) {
+      //   inventorsFullName.push(`${inventor.first} ${inventor.last}`);
+      // }
+      // console.log(inventorsFullName);
+
+      // const inventorsFullName = inventors.map((inventor) => {
+      //   return `${inventor.first} ${inventor.last}`;
+      // });
+
+      // console.log(inventorsFullName);
 
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest

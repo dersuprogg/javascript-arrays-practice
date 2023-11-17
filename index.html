@@ -151,7 +151,19 @@
         "van",
         "car",
         "truck",
+        "truck",
+        "van",
       ];
+
+      const occurences = {};
+      for (const item of data) {
+        if (occurences[item] >= 0) {
+          occurences[item] = occurences[item] + 1;
+        } else {
+          occurences[item] = 0;
+        }
+      }
+      console.table(occurences);
     </script>
   </body>
 </html>
